@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pomeranian91/wanted_pre_onboarding/static/css/main.1a22b31c.css",
+    "main.js": "/pomeranian91/wanted_pre_onboarding/static/js/main.a3cc24f6.js",
+    "index.html": "/pomeranian91/wanted_pre_onboarding/index.html",
+    "main.1a22b31c.css.map": "/pomeranian91/wanted_pre_onboarding/static/css/main.1a22b31c.css.map",
+    "main.a3cc24f6.js.map": "/pomeranian91/wanted_pre_onboarding/static/js/main.a3cc24f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a22b31c.css",
+    "static/js/main.a3cc24f6.js"
+  ]
+}
