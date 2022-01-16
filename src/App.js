@@ -1,12 +1,12 @@
 import "./App.css";
-import Navbar from "./routes/Navbar";
-import Home from "./routes/Home";
+import GNB from "./routes/GNB";
+import Slide from "./routes/Slide";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Home></Home>
+      <GNB></GNB>
+      <Slide></Slide>
     </div>
   );
 }
