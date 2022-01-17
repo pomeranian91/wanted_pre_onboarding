@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/wanted_pre_onboarding/static/css/main.9e59d913.css",
-    "main.js": "/wanted_pre_onboarding/static/js/main.58f43eb0.js",
+    "main.css": "/wanted_pre_onboarding/static/css/main.c99c7186.css",
+    "main.js": "/wanted_pre_onboarding/static/js/main.ddd82c96.js",
     "static/media/slick.svg": "/wanted_pre_onboarding/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/wanted_pre_onboarding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/wanted_pre_onboarding/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/wanted_pre_onboarding/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wanted_pre_onboarding/index.html",
-    "main.9e59d913.css.map": "/wanted_pre_onboarding/static/css/main.9e59d913.css.map",
-    "main.58f43eb0.js.map": "/wanted_pre_onboarding/static/js/main.58f43eb0.js.map"
+    "main.c99c7186.css.map": "/wanted_pre_onboarding/static/css/main.c99c7186.css.map",
+    "main.ddd82c96.js.map": "/wanted_pre_onboarding/static/js/main.ddd82c96.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e59d913.css",
-    "static/js/main.58f43eb0.js"
+    "static/css/main.c99c7186.css",
+    "static/js/main.ddd82c96.js"
   ]
 }
