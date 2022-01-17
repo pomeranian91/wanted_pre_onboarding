@@ -1,19 +1,190 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.test {
+  position: relative;
+  width: 100%;
+}
+.Slide_container {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  display: inline-block;
+}
+.Slide_deatil {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+}
+.Slide_detail_img {
+  border-radius: 4px;
+  object-fit: cover;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 100%;
+  max-width: 1060px;
+  height: 300px;
+}
+.slick-slider {
+  margin: 0 -5px;
+}
+.slick-slide {
+  padding: 20px 5px;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+/* 슬라이드 텍스트 */
+.Slide_detail_text {
+  position: absolute;
+  bottom: 28px;
+  width: 330px;
+  height: 146px;
+  border-radius: 4px;
+  background-color: white;
+  text-align: left;
+  left: 34px;
+  z-index: 90;
+}
+.Slide_detail_text h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0px 20px;
+  margin-top: 20px;
+}
+.Slide_detail_text h3 {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  height: 44px;
+  margin: 0px 20px;
+}
+.Slide_detail_text hr {
+  margin-bottom: 10px;
+  opacity: 0.4;
+}
+.Slide_detail_text span {
+  color: #36f;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 1;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.Slide_detail_text-midea {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin-top: 20px;
+}
+.Slide_detail_text-midea h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  width: auto;
+}
+.Slide_detail_text-midea h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-top: 6px;
+  width: auto;
+}
+.Slide_detail_text-midea span {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #36f;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* 슬라이드 부가옵션 */
+.Slide_center {
+  opacity: 1;
+}
+.Slide_side {
+  opacity: 0.5;
+}
+.Slide_text_side {
+  opacity: 0;
+}
+/* 버튼레이아웃 */
+.btn_left {
+  position: absolute;
+  top: 120px;
+  left: calc((100% - 1200px) / 2);
+  width: 30px;
+  height: 60px;
+  opacity: 1;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 16px;
+  overflow: visible;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
+.btn_right {
+  position: absolute;
+  top: 120px;
+  right: calc((100% - 1200px) / 2);
+  width: 30px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 16px;
+  overflow: visible;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn_left {
+    display: none;
+  }
+  .btn_right {
+    display: none;
+  }
+  .Slide_detail_text-midea {
+    display: flex;
+  }
+  .Slide_detail_text {
+    display: none;
+  }
+  .Slide_detail_img {
+    width: 100%;
+    height: 182px;
+  }
+  .slick-slider {
+    margin: 0 -5px;
+  }
+  .slick-slide {
+    padding: 20px 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: -2px;
+  }
+}
+
+/* 
 .Slide_container {
   margin: 15px auto;
   position: relative;
   display: flex;
   overflow-x: hidden;
-  height: auto;
-  /* overflow-x: hidden; */
 }
 .Slide_list {
-  display: inline-flex;
+  display: inline-block;
   justify-content: center;
   flex-wrap: nowrap;
   width: 100%;
   height: auto;
-  flex-shrink: 0;
-  /* transform: translateX(1083px); */
 }
 .Slide_detail {
   max-width: 1060px;
@@ -27,7 +198,7 @@
   width: inherit;
 }
 /* 슬라이드 텍스트 */
-.Slide_detail_text {
+/* .Slide_detail_text {
   position: absolute;
   bottom: 28px;
   width: 330px;
@@ -93,7 +264,7 @@
   cursor: pointer;
 }
 /* 슬라이드 부가옵션 */
-.Slide_center {
+/* .Slide_center {
   opacity: 1;
 }
 .Slide_side {
@@ -103,7 +274,7 @@
   opacity: 0;
 }
 /* 버튼레이아웃 */
-.btn_left {
+/* .btn_left {
   position: absolute;
   top: 120px;
   left: calc((100% - 1200px) / 2);
@@ -151,10 +322,6 @@
   .Slide_list {
     display: flex;
     white-space: nowrap;
-
-    /* transform: translateX(80vw); */
-
-    /* transform: translateX(calc((160vw + 10px))); */
   }
   .Slide_detail {
     white-space: nowrap;
@@ -164,4 +331,4 @@
   .Slide_detail_img {
     height: 182px;
   }
-}
+}  */
