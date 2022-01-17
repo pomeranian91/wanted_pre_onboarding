@@ -1,6 +1,7 @@
 <h1>원티드 프리온보딩 코스</h1>
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
 <a href="https://pomeranian91.github.io/wanted_pre_onboarding/">배포주소:https://pomeranian91.github.io/wanted_pre_onboarding/</a>
+
 <div>필수 구현사항</div>
 <div></div>
 <h3>1.상단 GNB</h3>
