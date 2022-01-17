@@ -2,9 +2,11 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-.test {
+.Slide_Main {
   position: relative;
-  width: 100%;
+}
+.Slide_box {
+  position: relative;
 }
 .Slide_container {
   position: relative;
@@ -16,7 +18,6 @@ body {
   position: relative;
   width: 100%;
   display: inline-block;
-  white-space: nowrap;
 }
 .Slide_detail_img {
   border-radius: 4px;
@@ -24,21 +25,28 @@ body {
   vertical-align: middle;
   cursor: pointer;
   width: 100%;
-  max-width: 1060px;
-  height: 300px;
+  max-height: 310px;
 }
 .slick-slider {
-  margin: 0 -5px;
+  width: 100%;
 }
 .slick-slide {
-  padding: 20px 5px;
+  padding: 20px 10px;
   text-align: center;
-  margin-right: 5px;
-  margin-left: 15px;
+  margin-right: -5px;
+  margin-left: 4px;
+  filter: brightness(50%);
+}
+.slick-current {
+  filter: brightness(100%);
+}
+.slick-current > div > div > div:nth-child(2) {
+  display: block;
 }
 
 /* 슬라이드 텍스트 */
 .Slide_detail_text {
+  display: none;
   position: absolute;
   bottom: 28px;
   width: 330px;
@@ -102,24 +110,15 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
-/* 슬라이드 부가옵션 */
-.Slide_center {
-  opacity: 1;
-}
-.Slide_side {
-  opacity: 0.5;
-}
-.Slide_text_side {
-  opacity: 0;
-}
+
 /* 버튼레이아웃 */
 .btn_left {
   position: absolute;
-  top: 120px;
-  left: calc((100% - 1200px) / 2);
+  top: 150px;
+  left: 5px;
   width: 30px;
   height: 60px;
-  opacity: 1;
+  opacity: 0.5;
   border-radius: 15px;
   background-color: white;
   font-size: 16px;
@@ -130,8 +129,8 @@ body {
 }
 .btn_right {
   position: absolute;
-  top: 120px;
-  right: calc((100% - 1200px) / 2);
+  top: 150px;
+  right: 5px;
   width: 30px;
   height: 60px;
   opacity: 0.5;
@@ -143,7 +142,7 @@ body {
   border: none;
   cursor: pointer;
 }
-
+/* 반응형 */
 @media screen and (max-width: 1200px) {
   .btn_left {
     display: none;
@@ -163,172 +162,15 @@ body {
   }
   .slick-slider {
     margin: 0 -5px;
+    width: 100%;
   }
   .slick-slide {
     padding: 20px 5px;
     text-align: center;
     margin-right: 5px;
-    margin-left: -2px;
+    margin-left: -5px;
   }
-}
-
-/* 
-.Slide_container {
-  margin: 15px auto;
-  position: relative;
-  display: flex;
-  overflow-x: hidden;
-}
-.Slide_list {
-  display: inline-block;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: auto;
-}
-.Slide_detail {
-  max-width: 1060px;
-  height: auto;
-  position: relative;
-  outline: none;
-  margin: 0px 15px;
-}
-.Slide_detail_img {
-  border-radius: 4px;
-  width: inherit;
-}
-/* 슬라이드 텍스트 */
-/* .Slide_detail_text {
-  position: absolute;
-  bottom: 28px;
-  width: 330px;
-  height: 146px;
-  border-radius: 4px;
-  background-color: white;
-  opacity: 1;
-  text-align: left;
-  left: 34px;
-  z-index: 99;
-}
-.Slide_detail_text h2 {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0px 20px;
-  margin-top: 20px;
-}
-.Slide_detail_text h3 {
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: 300;
-  margin: 0px 20px;
-  margin-bottom: 20px;
-}
-.Slide_detail_text hr {
-  margin-bottom: 10px;
-  opacity: 0.4;
-}
-.Slide_detail_text span {
-  color: #36f;
-  font-size: 14px;
-  font-weight: 700;
-  height: 40px;
-  line-height: 1;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.Slide_detail_text-midea {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  margin-top: 20px;
-}
-.Slide_detail_text-midea h2 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  width: auto;
-}
-.Slide_detail_text-midea h3 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.15;
-  margin-top: 6px;
-  width: auto;
-}
-.Slide_detail_text-midea span {
-  font-size: 14px;
-  margin-top: 8px;
-  color: #36f;
-  font-weight: 700;
-  cursor: pointer;
-}
-/* 슬라이드 부가옵션 */
-/* .Slide_center {
-  opacity: 1;
-}
-.Slide_side {
-  opacity: 0.5;
-}
-.Slide_text_side {
-  opacity: 0;
-}
-/* 버튼레이아웃 */
-/* .btn_left {
-  position: absolute;
-  top: 120px;
-  left: calc((100% - 1200px) / 2);
-  width: 30px;
-  height: 60px;
-  opacity: 0.5;
-  border-radius: 15px;
-  background-color: white;
-  font-size: 16px;
-  overflow: visible;
-  z-index: 10;
-  border: none;
-  cursor: pointer;
-}
-.btn_right {
-  position: absolute;
-  top: 120px;
-  right: calc((100% - 1200px) / 2);
-  width: 30px;
-  height: 60px;
-  opacity: 0.5;
-  border-radius: 15px;
-  background-color: white;
-  font-size: 16px;
-  overflow: visible;
-  z-index: 10;
-  border: none;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  .btn_left {
+  .slick-current > div > div > div:nth-child(2) {
     display: none;
   }
-  .btn_right {
-    display: none;
-  }
-  .Slide_detail_text-midea {
-    display: flex;
-    width: 80vw;
-  }
-  .Slide_detail_text {
-    display: none;
-  }
-  .Slide_list {
-    display: flex;
-    white-space: nowrap;
-  }
-  .Slide_detail {
-    white-space: nowrap;
-    margin: 0px 10px;
-    width: 80vw;
-  }
-  .Slide_detail_img {
-    height: 182px;
-  }
-}  */
+}

@@ -1,6 +1,6 @@
 import "./App.css";
-import GNB from "./routes/GNB";
-import Slide from "./routes/Slide";
+import GNB from "./component/GNB";
+import Slide from "./component/Slide";
 
 function App() {
   return (
